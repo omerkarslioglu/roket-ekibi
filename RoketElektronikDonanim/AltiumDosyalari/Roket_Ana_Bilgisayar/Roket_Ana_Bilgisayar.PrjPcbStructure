@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=TopSheet.SchDoc
+Record=SheetSymbol|SourceDocument=TopSheet.SchDoc|Designator=U_MPU6050|SchDesignator=U_MPU6050|FileName=MPU6050.SchDoc|SymbolType=Normal|RawFileName=MPU6050.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopSheet.SchDoc|Designator=U_MS5803-01|SchDesignator=U_MS5803-01|FileName=MS5803-01.BA.SchDoc|SymbolType=Normal|RawFileName=MS5803-01.BA.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
