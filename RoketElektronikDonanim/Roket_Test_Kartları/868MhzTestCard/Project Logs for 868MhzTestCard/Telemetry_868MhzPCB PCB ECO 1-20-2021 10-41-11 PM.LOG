@@ -1,0 +1,16 @@
+Change Component Designator: OldDesignator=C7 NewDesignator=C3
+Added Component: Designator=C1(PKLH-016V471MG125-T/A5.0)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/passive-components/capacitors/aluminum-capacitors/CK1H107M10010VR"; VariantName = "[No Variations]"
+Added Component: Designator=C2(PKRM-035V101ME110-T/A5.0)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/passive-components/capacitors/aluminum-capacitors/CK1H107M10010VR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3v3 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=+3v3 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Member To Class: ClassName=Telemetry_868Mhz Member=Component C1 470uF
+Added Member To Class: ClassName=Telemetry_868Mhz Member=Component C2 100uF
+Added Room: Name=Telemetry_868Mhz

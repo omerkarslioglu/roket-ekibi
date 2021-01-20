@@ -1,0 +1,80 @@
+Added Component: Designator=C5(BXJ25VC470MJ10TP)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/passive-components/capacitors/aluminum-capacitors/BXJ25VC470MJ10TP"; VariantName = "[No Variations]"
+Added Component: Designator=C6(BXJ25VC470MJ10TP)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/passive-components/capacitors/aluminum-capacitors/CK1H107M10010VR"; VariantName = "[No Variations]"
+Added Component: Designator=C7(Cap_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(RightAngled_SMA_Connector)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/connectors-and-interconnects/coaxial-connectors/sma-connectors/L-KLS1-SMA002-B"; VariantName = "[No Variations]"
+Added Component: Designator=J2(Header_4pin_Female)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(RES_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(RES_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3(RES_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R4(RES_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R5(RES_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R6(RES_0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U2(E22-900T30S)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+3v3 Pin=C5-1
+Added Pin To Net: NetName=+3v3 Pin=C6-1
+Added Pin To Net: NetName=+3v3 Pin=C7-1
+Added Pin To Net: NetName=+3v3 Pin=J2-1
+Added Pin To Net: NetName=+3v3 Pin=R1-2
+Added Pin To Net: NetName=+3v3 Pin=R2-2
+Added Pin To Net: NetName=+3v3 Pin=U2-6
+Added Net: Name=+3v3
+Added Pin To Net: NetName=GND_1 Pin=R3-1
+Added Pin To Net: NetName=GND_1 Pin=R4-1
+Added Pin To Net: NetName=GND_1 Pin=U2-7
+Added Net: Name=GND_1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=GND Pin=U2-9
+Added Pin To Net: NetName=GND Pin=U2-15
+Added Pin To Net: NetName=GND Pin=U2-16
+Added Pin To Net: NetName=GND Pin=U2-17
+Added Net: Name=GND
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=U2-18
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=R3-2
+Added Pin To Net: NetName=NetR1_1 Pin=U2-2
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetR2_1 Pin=R4-2
+Added Pin To Net: NetName=NetR2_1 Pin=U2-1
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=U2-4
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_1 Pin=U2-3
+Added Net: Name=NetR6_1
+Added Pin To Net: NetName=RX Pin=J2-3
+Added Pin To Net: NetName=RX Pin=R6-2
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=J2-4
+Added Pin To Net: NetName=TX Pin=R5-2
+Added Net: Name=TX
+Added Class: Name=Telemetry_868Mhz
+Added Room: Name=Telemetry_868Mhz

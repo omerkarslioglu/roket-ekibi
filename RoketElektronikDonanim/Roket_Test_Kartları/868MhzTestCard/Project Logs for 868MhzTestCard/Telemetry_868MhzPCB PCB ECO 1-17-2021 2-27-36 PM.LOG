@@ -1,0 +1,16 @@
+Added Component: Designator=U2(E22-900T30S)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "M2M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.m2mmarket.com.tr/lora-868mhz-1w-smd-long-range-5v-supplyrf-transmission-30-dbm-10-k-2153"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR2_1 Pin=U2-1
+Added Pin To Net: NetName=NetR1_1 Pin=U2-2
+Added Pin To Net: NetName=NetR6_1 Pin=U2-3
+Added Pin To Net: NetName=NetR5_1 Pin=U2-4
+Added Pin To Net: NetName=+3v3 Pin=U2-6
+Added Pin To Net: NetName=GND_1 Pin=U2-7
+Added Pin To Net: NetName=GND Pin=U2-9
+Added Pin To Net: NetName=GND Pin=U2-15
+Added Pin To Net: NetName=GND Pin=U2-16
+Added Pin To Net: NetName=GND Pin=U2-17
+Added Pin To Net: NetName=NetJ1_1 Pin=U2-18
+Added Member To Class: ClassName=Telemetry_868Mhz Member=Component U2 E22-900T30S

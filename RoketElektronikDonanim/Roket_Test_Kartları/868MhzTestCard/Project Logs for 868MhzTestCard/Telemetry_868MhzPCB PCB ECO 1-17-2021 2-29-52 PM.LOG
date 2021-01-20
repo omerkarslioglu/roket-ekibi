@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Room: Name=Telemetry_868Mhz

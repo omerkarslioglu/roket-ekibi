@@ -1,0 +1,13 @@
+Change Component Description : Designator=U2 Old Description=https://www.m2mmarket.com.tr/lora-868mhz-1w-smd-long-range-5v-supplyrf-transmission-30-dbm-10-k-2153 New Description=LoRa, 868MHz 1W SMD long range, 5V Supply,RF Transmission 30 dBm, 10 k
+Change component parameters: Designator = "U2"; Footprint = "E22-900T30S"; UniqueID = "\BWOXZJFS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "M2M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.m2mmarket.com.tr/lora-868mhz-1w-smd-long-range-5v-supplyrf-transmission-30-dbm-10-k-2153"; VariantName = "[No Variations]"
+Added Component: Designator=C5(BXJ25VC470MJ10TP)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "özdisan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://ozdisan.com/passive-components/capacitors/aluminum-capacitors/BXJ25VC470MJ10TP"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3v3 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Member To Class: ClassName=Telemetry_868Mhz Member=Component C5 470uF
+Added Room: Name=Telemetry_868Mhz
