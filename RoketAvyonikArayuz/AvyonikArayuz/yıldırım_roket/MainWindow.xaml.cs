@@ -33,6 +33,7 @@ namespace ders2_10._01._2020
             InitializeComponent();
             lb_rocket_name.DataContext = RoketViewModel.YıldırımRoket;
             gauge_altitude.DataContext = RoketViewModel.YıldırımRoket;
+            gauge_speed.DataContext = RoketViewModel.YıldırımRoket;
         }
 
 
@@ -81,11 +82,14 @@ namespace ders2_10._01._2020
         }
 
         double alt = 0;
+        double spd = 0;
         private void bt_isim_degistir_Click(object sender, RoutedEventArgs e)
         {
             alt++;
+            spd--;
             RoketViewModel.setName("Mücahit Yıldırım");
             RoketViewModel.setAltitude(alt);
+            RoketViewModel.setSpeed(spd);
         }
     }
 }

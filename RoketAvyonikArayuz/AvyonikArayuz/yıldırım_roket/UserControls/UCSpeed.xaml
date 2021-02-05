@@ -3,10 +3,68 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:conv="clr-namespace:roket_yer_bilgisayari.Converters"
              xmlns:local="clr-namespace:roket_yer_bilgisayari.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+            x:Name="uc">
+    <UserControl.Resources>
+        <conv:DoubleToTextConverter x:Key="DoubleToTextConverter" />
+    </UserControl.Resources>
     <Grid>
-            
+        <Border HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="90" Width="180" BorderBrush="#FFCF5D1D"
+                BorderThickness="2 2 2 0" CornerRadius="300 300 0 0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF151515" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF6F6F6F"/>
+                    <GradientStop Color="#FF4B4B4B"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="87" Width="174" BorderBrush="#FFCF5D1D"
+                BorderThickness="0 2 0 0" CornerRadius="300 300 0 0">
+            <Border.Effect>
+                <DropShadowEffect Color="#FFFFC7A7" BlurRadius="10" ShadowDepth="2"/>
+            </Border.Effect>
+        </Border>
+
+        <Border Width="2" CornerRadius="120 120 0 0" Background="#FFFF6901" RenderTransformOrigin="0.5 2" Height="42" Margin="0 0 0 42" 
+                VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="{Binding Path=Speed, ElementName=uc}"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#FFB9B9B9" ShadowDepth="0"/>
+            </Border.Effect>
+        </Border>
+        <DockPanel HorizontalAlignment="Center">
+
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="35,35,5,35" FontSize="26" 
+                   FontFamily="Agency FB" Foreground="#FF95D4FF" Text="{Binding Path=Speed, ElementName=uc, Converter={StaticResource DoubleToTextConverter}}">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="#FF91DEFB" ShadowDepth="0"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,35,35,35" FontSize="12" 
+                   FontFamily="Agency FB" Foreground="#FF95D4FF" Text="m/s">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="#FF91DEFB" ShadowDepth="0"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </DockPanel>
+
+
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5" FontSize="19" 
+                   FontFamily="Agency FB" Foreground="#FF95D4FF" Text="Speed">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#FF91DEFB" ShadowDepth="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
     </Grid>
 </UserControl>

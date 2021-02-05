@@ -20,8 +20,21 @@ namespace roket_yer_bilgisayari.UserControls
     /// </summary>
     public partial class UCSpeed : UserControl
     {
+
+        public static readonly DependencyProperty SpeedPropery = DependencyProperty.Register("Speed", typeof(double), typeof(UCSpeed));
+        public double Speed
+
+        {
+
+            get { return (double)GetValue(SpeedPropery); }
+
+            set { SetValue(SpeedPropery, value); }
+
+        }
+
         public UCSpeed()
         {
+            this.DataContext = this;
             InitializeComponent();
         }
     }

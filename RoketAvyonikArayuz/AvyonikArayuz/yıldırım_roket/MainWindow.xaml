@@ -27,31 +27,38 @@
         </Grid>
 
         <Grid Grid.Column="1" >
-            <wpf:Map x:Name="map_layer" Mode="AerialWithLabels" Center=" 39.970777,32.818283 " ZoomLevel="16" CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition  Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <wpf:Map x:Name="map_layer" Grid.RowSpan="2" Mode="AerialWithLabels" Center=" 39.970777,32.818283 " ZoomLevel="16" CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo">
 
                 <Canvas
                 wpf:MapLayer.Position=" 39.970777,32.818283 "
                 Width="20" Height="20">
                     <materialDesign:PackIcon Kind="BabyBottle"  Width="20" Height="20" Foreground="Orange"/>
                 </Canvas>
-                <Grid Height="80" VerticalAlignment="Bottom">
-                    <Grid.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="Transparent" Offset="0"/>
-                            <GradientStop Color="DarkGray" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Grid.Background>
-                    <DockPanel HorizontalAlignment="Center">
-
-                        <StackPanel>
-                            <Label x:Name="lb_rocket_name" FontSize="18" Content="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
-                        </StackPanel>
-                        <UserControls:UCAltitude x:Name="gauge_altitude" HorizontalAlignment="Left" Altitude="{Binding Altitude, UpdateSourceTrigger=PropertyChanged}" Height="306" VerticalAlignment="Top" Width="688" Margin="0,-256,0,0" />
-                    </DockPanel>
-
-                </Grid>
+              
 
             </wpf:Map>
+
+            <Grid Grid.Row="1">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Transparent" Offset="0"/>
+                        <GradientStop Color="#FF151515" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <DockPanel HorizontalAlignment="Center">
+
+                    <StackPanel>
+                        <Label x:Name="lb_rocket_name" FontSize="18" Content="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+                    </StackPanel>
+                    <UserControls:UCAltitude x:Name="gauge_altitude" HorizontalAlignment="Left" Altitude="{Binding Altitude, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Bottom"/>
+                    <UserControls:UCSpeed x:Name="gauge_speed" HorizontalAlignment="Left" Speed="{Binding Speed, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Bottom"/>
+                </DockPanel>
+
+            </Grid>
         </Grid>
 
 

@@ -23,5 +23,10 @@ namespace roket_yer_bilgisayari.ViewModel
         {
             YıldırımRoket.Altitude = altitude;
         }
+
+        public static void setSpeed(double speed)
+        {
+            YıldırımRoket.Speed = speed;
+        }
     }
 }
