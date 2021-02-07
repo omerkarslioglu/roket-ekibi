@@ -34,6 +34,8 @@ namespace ders2_10._01._2020
             lb_rocket_name.DataContext = RoketViewModel.YıldırımRoket;
             gauge_altitude.DataContext = RoketViewModel.YıldırımRoket;
             gauge_speed.DataContext = RoketViewModel.YıldırımRoket;
+            lb_latitude.DataContext = RoketViewModel.YıldırımRoket;
+            lb_longitude.DataContext = RoketViewModel.YıldırımRoket;
         }
 
 
@@ -90,6 +92,20 @@ namespace ders2_10._01._2020
             RoketViewModel.setName("Mücahit Yıldırım");
             RoketViewModel.setAltitude(alt);
             RoketViewModel.setSpeed(spd);
+        }
+
+
+        double latitude = 0;
+        double longitude = 0;
+        private void bt_gps_Click(object sender, RoutedEventArgs e)
+        {
+
+            latitude++;
+            longitude--;
+
+            RoketViewModel.setLatitude(latitude);
+            RoketViewModel.setLongitude(longitude);
+
         }
     }
 }

@@ -28,5 +28,15 @@ namespace roket_yer_bilgisayari.ViewModel
         {
             YıldırımRoket.Speed = speed;
         }
+
+        public static void setLatitude(double latitude)
+        {
+            YıldırımRoket.Latitude = latitude;
+        }
+
+        public static void setLongitude(double longitude)
+        {
+            YıldırımRoket.Longitude = longitude;
+        }
     }
 }

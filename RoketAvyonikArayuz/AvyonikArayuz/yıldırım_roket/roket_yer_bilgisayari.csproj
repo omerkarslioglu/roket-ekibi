@@ -71,6 +71,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Converters\DoubleToTextConverter.cs" />
+    <Compile Include="SerialCommunication\XSerialPort.cs" />
     <Compile Include="UserControls\UCAltitude.xaml.cs">
       <DependentUpon>UCAltitude.xaml</DependentUpon>
     </Compile>

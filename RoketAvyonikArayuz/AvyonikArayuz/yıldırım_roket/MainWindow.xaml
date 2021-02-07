@@ -22,16 +22,23 @@
                 <Button x:Name="bt_asagi" Content="Aşağı" Click="bt_asagi_Click"/>
                 <Button x:Name="bt_sag_yukari_capraz" Content="SY Capraz" Click="bt_sag_yukari_capraz_Click"/>
                 <Button x:Name="bt_isim_degistir" Content="IsimDegister" Click="bt_isim_degistir_Click"/>
+                <Button x:Name="bt_gps" Content="GPS" Click="bt_gps_Click"/>
             </StackPanel>
 
         </Grid>
 
         <Grid Grid.Column="1" >
             <Grid.RowDefinitions>
+                <RowDefinition  Height="32"></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition  Height="100"></RowDefinition>
             </Grid.RowDefinitions>
-            <wpf:Map x:Name="map_layer" Grid.RowSpan="2" Mode="AerialWithLabels" Center=" 39.970777,32.818283 " ZoomLevel="16" CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo">
+
+   
+
+
+
+            <wpf:Map x:Name="map_layer" Grid.RowSpan="3" Mode="AerialWithLabels" Center=" 39.970777,32.818283 " ZoomLevel="16" CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo">
 
                 <Canvas
                 wpf:MapLayer.Position=" 39.970777,32.818283 "
@@ -42,7 +49,30 @@
 
             </wpf:Map>
 
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="0" >
+                <Border Margin="100,-2,100,0" BorderThickness="2" CornerRadius="0,0,10,10">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF5A5A5A" Offset="0"/>
+                            <GradientStop Color="#55FFFFFF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <DockPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                        <Label HorizontalAlignment="Center" Content="Latitude:" FontWeight="Bold" FontSize="18" FontFamily="Agency FB">
+                        </Label>
+                        <Label x:Name="lb_latitude" HorizontalAlignment="Center"  Content="{Binding Latitude, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold" FontSize="18" FontFamily="Agency FB">
+                        </Label>
+                        <Label HorizontalAlignment="Center" Content="Longitude:" FontWeight="Bold" FontSize="18" FontFamily="Agency FB">
+                        </Label>
+                        <Label x:Name="lb_longitude" HorizontalAlignment="Center" Content="{Binding Longitude, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold" FontSize="18" FontFamily="Agency FB">
+                        </Label>
+                    </DockPanel>
+
+                </Border>
+
+            </Grid>
+            
+            <Grid Grid.Row="2">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Transparent" Offset="0"/>
