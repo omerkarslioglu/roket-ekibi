@@ -1,0 +1,2 @@
+Sanal Seri Port Açma Uygulaması:   	https://www.virtual-serial-port.org/
+Terminal Realterm: 			https://sourceforge.net/projects/realterm/
