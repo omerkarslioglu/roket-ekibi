@@ -3,4 +3,7 @@ Hüseyin Ural                   Merve Karaman                      Mücahit Yıl
 Nilay Gürbüz                   Şamil Bilgin                       Kürşad Cebeci
 Sude Zeliha Havan              Abdullah Çölgeçen
 Alperen Uğurluoğlu
+<<<<<<< HEAD
 Ceren Kılıç
+=======
+>>>>>>> 77e8d59895851f1f32980f1c465b674c7b8ce350
